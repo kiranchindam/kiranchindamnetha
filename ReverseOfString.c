@@ -2,7 +2,7 @@
 void main()
 {
   char str[20];
-  int i=0,j;
+  int i=0,j=0;
   printf("enter a string");
   gets(str);
   while(str[i]!='\0')
