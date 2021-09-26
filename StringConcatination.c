@@ -1,27 +1,28 @@
 #include<stdio.h>
-void  string concatination(char*,char*);
+void  stringConcatination(char*,char*);
 void main()
 {
   char str1[20],str2[20];
   printf("enter string1");
-  gets(str1);
+  gets_s(str1);
   printf("enter string2");
-  gets(str2);
-  string concatination(str1,str2);
+  gets_s(str2);
+  stringConcatination(str1,str2);
   printf("concatination of string is %s \n",str1);
 }
-void string concatination(char* str1,char* str2)
+void stringConcatination(char* st1,char* st2)
 {
   int i=0;
-  while(str1[i]!='\0')
+  while(st1[i]!='\0')
   {
     i++;
   }
-  while(str2[j]!='\0')
+  int j=0;
+  while(st2[j]!='\0')
   {
-    str1[i]=str2[j];
+    st1[i]=st2[j];
     i++;
     j++;
   }
-  str[i]='\0';
+  st1[i]='\0';
 }
