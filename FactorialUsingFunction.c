@@ -3,7 +3,7 @@ void Factorial(int);
 void main()
 {
   int n;
-  printf("enter a number");
+  printf("enter a number:");
   scanf("%d",&n);
   Factorial(n);
   return 0;
