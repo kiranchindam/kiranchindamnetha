@@ -1,33 +1,32 @@
 #include<stdio.h>
 void main()
 {
-    int i, a[10], ele;
-    int first, last, mid;
-    for (i = 0;i < 9;i++)
+     int a[10],i,ele;
+    int first,last,mid;
+    for(i=0;i<9;i++)
     {
-        printf("enter array elements");
-        scanf_s("%d", &a[i]);
+        printf("enter array elements:");
+        scanf("%d",&a[i]);
     }
     printf("enter element to search");
-    scanf_s("%d", &ele);
-    first = 0;
-    last = 9;
-    while (first < last)
+    scanf("%d",&ele);
+    first=0;
+    last=9;
+    for(i=0;i<9;i++)
     {
-        mid = (first + last) / 2;
-        if (ele == a[mid])
+        mif=(first+last)/2;
+        if(ele==a[mid])
         {
-            printf("element found at position%d\n", mid + 1);
+            printf("element found at position:%d",mid+1);
             break;
         }
-        else if (ele > a[mid])
+        else if(ele>a[mid])
         {
-            first = mid + 1;
+            mid=mid+1;
         }
-        else if (ele < a[mid])
+        else if(ele<a[mid])
         {
-            last = mid - 1;
-        }
+            mid=mid-1;
         }
     }
-
+                                    
