@@ -22,11 +22,11 @@ void main()
         }
         else if(ele>a[mid])
         {
-            mid=mid+1;
+            first=mid+1;
         }
         else if(ele<a[mid])
         {
-            mid=mid-1;
+            last=mid-1;
         }
     }
                                     
