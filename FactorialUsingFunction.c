@@ -6,7 +6,6 @@ void main()
   printf("enter a number:");
   scanf("%d",&n);
   Factorial(n);
-  return 0;
 }
 void Factorial(int num)
 {
@@ -15,5 +14,5 @@ void Factorial(int num)
   {
     fact=fact*num;
   }
-  printf("factorial of given number is:%d",fact);
+  printf("factorial of given number is:%d",num,fact);
 }
